@@ -10,9 +10,9 @@ function guess() {
     }
     if(!validateInput(input.value)){
         return;
+    } else {
+        attempt++;
     }
-    
-    attempt++;
     
     let test = getResults(input.value);
     
