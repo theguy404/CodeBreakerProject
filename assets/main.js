@@ -14,7 +14,7 @@ function guess() {
     
     attempt++;
     
-    let test = getResults(input);
+    let test = getResults(input.value);
     
     if(test){
         setMessage("You Win! :)");
@@ -57,7 +57,7 @@ function getResults(input){
     let string = first;
     let correct = 0;
     for(let i = 0; i < 4; i++){
-        if(answer.includes(input.charAt(i))){
+        if(answer.value.includes(input.charAt(i))){
             if(input.charAt(i) == answer.charAt(i)){
                 string = string + `<span class="glyphicon glyphicon-ok"></span>`;
                 correct++;
