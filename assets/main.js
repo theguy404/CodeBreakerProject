@@ -4,6 +4,7 @@ let attempt = document.getElementById('attempt');
 function guess() {
     let input = document.getElementById('user-guess');
     //add functionality to guess function here
+    let atp = parseInt(attempt.value);
     
     if(answer == '' && attempt == ''){
         setHiddenFields();
@@ -11,7 +12,9 @@ function guess() {
     if(!validateInput(input.value)){
         return;
     } else {
-        attempt.value++;
+        
+        atp++;
+
     }
     
     let test = getResults(input.value);
@@ -27,6 +30,7 @@ function guess() {
     } else {
         setMessage("Incorrect, try again.");
     }
+        attempt.value = atp;
 }
 
 //implement new functions here
@@ -35,7 +39,7 @@ function setHiddenFields(){
     while(answer.value.length < 4){
         answer.value = "0" + answer.value;
     }
-    attempt = 0;
+    attempt.value = "0";
 }
 
 function setMessage(message){
