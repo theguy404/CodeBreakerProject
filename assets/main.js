@@ -23,7 +23,7 @@ function guess() {
         setMessage("You Win! :)");
         showAnswer(true);
         showReplay();
-    } else if(!test && attempt >= 10){
+    } else if(!test && atp >= 10){
         setMessage("You Lose! :(");
         showAnswer(false);
         showReplay();
