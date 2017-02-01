@@ -81,11 +81,11 @@ function getResults(input){
 }
 
 function showAnswer(input){
-    document.getElementById('answer').innerHTML = answer.value;
+    document.getElementById('code').innerHTML = answer.value;
     if(input){
-        document.getElementById('answer').className += " success";
+        document.getElementById('code').className += " success";
     } else {
-        document.getElementById('answer').className += " failure";
+        document.getElementById('code').className += " failure";
     }
 }
 
