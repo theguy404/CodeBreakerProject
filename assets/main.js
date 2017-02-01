@@ -52,9 +52,9 @@ function validateInput(input){
 }
 
 function getResults(input){
-    let string = first;
     let first = `<div class="row"><span class="col-md-6">`;
     let last = `</span><div class="col-md-6">`;
+    let string = first;
     let correct = 0;
     for(let i = 0; i < 4; i++){
         if(answer.includes(input.charAt(i))){
