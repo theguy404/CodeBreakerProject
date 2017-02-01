@@ -58,7 +58,7 @@ function getResults(input){
     let correct = 0;
     for(let i = 0; i < 4; i++){
         if(answer.value.includes(input.charAt(i))){
-            if(input.charAt(i) == answer.charAt(i)){
+            if(input.charAt(i) == answer.value.charAt(i)){
                 string = string + `<span class="glyphicon glyphicon-ok"></span>`;
                 correct++;
             } else {
